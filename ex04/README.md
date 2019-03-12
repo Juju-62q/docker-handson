@@ -1,8 +1,8 @@
 # Dockerのキャッシュ構造を理解する
 この2つで何が違うか比べてみよう．
 
-## 先に全ファイルを追加する
-`requirements.txt`, `get-docker.py`を先に追加して，パッケージをインストールする．
+## 問4-1: 先に全ファイルを追加するDockerfileを書いてみる．
+`requirements.txt`, `get-docker.py`を先にコンテナに追加して，パッケージをインストールする．
 その後`get-docker.py`を実行する．
 
 ヒント: 下記コマンドでパッケージインストールできます！
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 `get-docker.py` のURLを変更してもう一度実行する．
 
-## 先にパッケージのインストールを行う
+## 問4-2: 先にパッケージのインストールをして，プログラムを追加するDockerfileを書いてみる
 `requirements.txt`を追加して，パッケージのインストールを行う．
 その後`get-docker.py` を追加してこれを実行する．
 
