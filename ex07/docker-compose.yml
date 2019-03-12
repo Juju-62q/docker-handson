@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.15.9
+    ports: 
+      - 8080:80
+    depends_on: 
+      - flask
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+  flask:
+    build: ./flask
+    ports:
+      - 5000:5000
