@@ -1,7 +1,5 @@
 FROM python:3.7.2
 
-# ここから
-
-# ここまで
+COPY hello.py ./
 
 CMD ["python", "hello.py"]
