@@ -5,11 +5,11 @@
 ヒント: Dockerfileのビルドと実行の方法
 
 ```bash
-docker build -t test .
-docker run -it test
+docker image build -t test .
+docker container run -it test
 ```
 
 ## 問1-2: コマンドを変更する
 
-下記コマンドを流した時に，`ls /`が実行されるようにする．
+上記コマンドを流した時に，`ls /`が実行されるようにする．
 
